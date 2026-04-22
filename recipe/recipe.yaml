@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,6 +22,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - fastmcp >=2.0.0
+    # TODO: remove once https://github.com/conda-forge/authlib-feedstock/pull/46 is merged
+    - joserfc >=1.6
     - jupyter_server >=1.6,<3
 
 tests:
