@@ -21,7 +21,7 @@ requirements:
     - hatchling >=1.5
   run:
     - python >=${{ python_min }}
-    - fastmcp >=2.0.0
+    - fastmcp >=3
     # TODO: remove once https://github.com/conda-forge/authlib-feedstock/pull/46 is merged
     - joserfc >=1.6
     - jupyter_server >=1.6,<3
