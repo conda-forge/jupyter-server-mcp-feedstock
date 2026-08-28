@@ -1,5 +1,5 @@
 context:
-  version: "0.2.1"
+  version: "0.3.0rc0"
 
 package:
   name: jupyter-server-mcp
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyter-server-mcp/jupyter_server_mcp-${{ version }}.tar.gz
-  sha256: 41392496ced1d8de441fbcfff7c31b3fc2767abaa350e25660bbcc8aa5c8a9ae
+  sha256: fa3ef836c61e957534f309fe629ccbdb9d44b47337e38d676ac3ee5ad96bfb93
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling >=1.5
   run:
     - python >=${{ python_min }}
-    - fastmcp >=3
+    - fastmcp >=3.4.4
     # TODO: remove once https://github.com/conda-forge/authlib-feedstock/pull/46 is merged
     - joserfc >=1.6
     - jupyter_server >=1.6,<3
