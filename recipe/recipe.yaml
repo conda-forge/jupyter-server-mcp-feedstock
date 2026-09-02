@@ -1,5 +1,5 @@
 context:
-  version: "0.2.3"
+  version: "0.3.0"
 
 package:
   name: jupyter-server-mcp
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyter-server-mcp/jupyter_server_mcp-${{ version }}.tar.gz
-  sha256: 9c1345059d699f993996a78717403d5e7045669a638677835a76f1eb93683b33
+  sha256: 0ada12a229f0e3b04d2dbfcfed642d3fe94690e01d6df62c72a4c46063aff514
 
 build:
   noarch: python
