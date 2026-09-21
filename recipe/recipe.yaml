@@ -21,7 +21,7 @@ requirements:
     - hatchling >=1.5
   run:
     - python >=${{ python_min }}
-    - fastmcp >=3.4.4,<4
+    - fastmcp >=3.4.4,<5
     - jupyter_server >=1.6,<3
 
 tests:
