@@ -1,5 +1,5 @@
 context:
-  version: "0.3.0"
+  version: "0.4.0"
 
 package:
   name: jupyter-server-mcp
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyter-server-mcp/jupyter_server_mcp-${{ version }}.tar.gz
-  sha256: 0ada12a229f0e3b04d2dbfcfed642d3fe94690e01d6df62c72a4c46063aff514
+  sha256: 9202377f0396dea3f165183180ba33256c8552bf88106ee468ffac11b3f4b519
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling >=1.5
   run:
     - python >=${{ python_min }}
-    - fastmcp >=3.4.4,<4
+    - fastmcp >=3.4.4,<5
     - jupyter_server >=1.6,<3
 
 tests:
