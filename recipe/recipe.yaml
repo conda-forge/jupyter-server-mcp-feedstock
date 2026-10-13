@@ -1,5 +1,5 @@
 context:
-  version: "0.4.0"
+  version: "0.4.1"
 
 package:
   name: jupyter-server-mcp
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyter-server-mcp/jupyter_server_mcp-${{ version }}.tar.gz
-  sha256: 9202377f0396dea3f165183180ba33256c8552bf88106ee468ffac11b3f4b519
+  sha256: 0f8a5a6a28fcdf55d8c3691b412e794af42c139f28855c6a279708d30caa4e6f
 
 build:
   noarch: python
@@ -26,12 +26,12 @@ requirements:
 
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - jupyter_server_mcp
       pip_check: true
-    requirements:
-      run:
-        - python ${{ python_min }}.*
 
 about:
   homepage: https://github.com/jupyter-ai-contrib/jupyter-server-mcp
