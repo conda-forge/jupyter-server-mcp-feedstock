@@ -26,12 +26,12 @@ requirements:
 
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - jupyter_server_mcp
       pip_check: true
-    requirements:
-      run:
-        - python ${{ python_min }}.*
 
 about:
   homepage: https://github.com/jupyter-ai-contrib/jupyter-server-mcp
